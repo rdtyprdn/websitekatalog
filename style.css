@@ -1,0 +1,425 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'DM Sans', sans-serif;
+    
+}
+/* CSS Untuk Login & Dashboard */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body {
+    background-color: #f8f8f8;
+}
+
+#login-bg{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    width: 300px;
+    min-height: 200px;
+    border:1px solid #ccc;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.login-box h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input-control{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding:12px 15px;
+    background-color: #33CEFF;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+}
+.excel-btn{
+    
+    background-color: green;
+    border: none; /* Remove the black outline */
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-left: 139vh;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adding transition for hover effect */
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #1EA7E1; /* New color when hovered or clicked */
+    cursor: pointer;
+}
+
+
+header {
+    background-color: #33CEFF;
+    color: #fff;
+
+}
+header h1{
+    float: left;
+    padding: 10px 0;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    padding: 20px 0 20px 15px;
+    display: inline-block;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.section {
+    padding:25px 0;
+}
+.box {
+    background-color: #fff;
+    border:1px solid #ccc;
+    padding:15px;
+    box-sizing: border-box;
+    margin: 10px 0px 35px 0;
+    
+}
+.box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.button-edit-produk {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    margin-left: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button-hapus-produk {
+    background-color: red;
+    color: #fff;
+    border: none;
+    margin-left: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/*CSS Untuk Home */
+.search {
+    padding:15px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.search input[type=text] {
+    width: 60%;
+    padding: 10px;
+}
+.search input[type=submit] {
+    padding:12px 15px;
+    background-color: #33CEFF;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+}
+.col-5 {
+    width:20%;
+    height:100px;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.col-4 {
+    width:25%;
+    height: 320px;
+    border:1px solid #ccc;
+    float: left;
+    padding:10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.col-4:hover {
+    box-shadow: 0 0 3px #999;
+}
+.col-4 img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.col-4 .nama {
+    color: #666;
+     margin-bottom: 5px;
+}
+.col-4 .harga {
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color:#33CEFF;
+    float:right;
+}
+
+.deskripsi {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+#selamat-datang {
+    color: #fff; /* Change this to your desired color */
+}
+.box-judul {
+    height: 60vh; 
+    padding: 15px; 
+    margin: 10px 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; /* Make the element relative to position the ::before element */
+    background: url('assets/tokosembako.jpg') no-repeat center center / cover;
+    z-index: 1;
+    overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+  }
+  
+  .box-judul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure the overlay is behind the content */
+  }
+  
+.col-4 .deskripsi{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+.col-4 .nama {
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight:bolder;
+    color: #000;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: -1vh; /* Adjust left margin */
+    margin-top: 2vh; /* Adjust top margin */
+}
+
+.table tr{
+    height: 30px;
+    
+}
+
+.table tr td{
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    
+}
+.col-2 {
+    width: 50%;
+    min-height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.col-2 img{
+    border: 1px solid #f9f9f9;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.col-2 h4{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.col-2 h5 {
+    color:#33CEFF;
+    font-size: 20px;
+}
+.col-2 p {
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 15px;
+}
+.form-pembelian {
+    margin: 20px;
+    padding: 30px;
+}
+
+.form-pembelian label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-pembelian input[type="number"] {
+    width: 130px;
+    /* text-align: center; */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-pembelian .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #33CEFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-pembelian .btn:hover {
+    background-color: #1EA7E1;
+}
+.produk-detail {
+    display: flex;
+    /* flex-direction: column; */
+    padding-left: 70px;
+    align-items: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 90px;
+    padding-top: 20px;
+}
+.nama-produk-detail{
+    margin-top: 5px;
+}
+.transaksi-berhasil {
+    position: absolute;
+    padding-right: 170px;
+    margin-top: 30px;
+    top: 200px;
+    bottom: 100px;
+    right: 200px;
+    left: 10px;
+
+}
+/*Footer*/
+footer{
+    position:relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #33CEFF;
+    height: auto;
+    width: 100vw;
+    font-family: 'Open Sans';
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h6{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: red;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+@media  screen and (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+    .col-5{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .col-4{
+        width: 50%;
+        height: 300px;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    
+}
